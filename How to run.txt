@@ -1,0 +1,47 @@
+How to run:
+
+Extract the files and make sure you have installed MongoDB with MongoDB Compass.
+
+Open the folder in VS Code or any code editor.
+
+Next run these commands:
+Open a new terminal with path ending at contracts folder, run:
+(cd contracts)
+ 1. npx hardhat node
+
+Next in new terminal with path ending at contracts folder, run:
+(cd contracts)
+2. npm run deploy
+
+Next in new terminal with path ending at backend folder, run:
+(cd backend)
+3. node index.js
+
+Next in new terminal with path ending at backend folder, run:
+(cd backend)
+4. node auto-complete-and-archive.js
+ 
+Next in new terminal with path ending at backend folder, run:
+(cd backend)
+5. node test-wallet.js
+
+Next in new terminal with path ending at final folder located in admin, run:
+(cd final/admin)
+6. npm run dev
+
+open mongo db and click on new connection:
+copy MONGODB_URI address from .env file and paste the address in new connection
+
+Give the database a new name 
+
+Save and connect the connection
+Now u can access the data of VoteChain in real time
+
+Admin login credentials:
+username: admin
+password: admin123
+
+Go to website and check the functionalities
+
+Note: Delete previous results manually and re-rerun the whole project if you want to conduct elections again.
+
